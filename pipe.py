@@ -10,13 +10,16 @@ from utils import download_and_unzip
 import logging
 
 class FullPipeline:
-    def __init__(self, model="yolo11n.pt", epochs=500, batch_size=8, LS=None):
+    def __init__(self, model=None, epochs=None, batch_size=None, LS=None):
         self.extracted_folder_path = 'data'
         self.data_config = "dataset_path.yaml"
         self.output_dir = "datasets"
-        self.model = model
-        self.epochs = epochs
-        self.batch_size = batch_size
+        
+        self.model = model if model is not None else "yolo11n.pt"
+        if not self.model.endswith('.pt'):
+            raise ValueError("Model file must be a .pt file")
+        self.epochs = epochs if epochs is not None else 500
+        self.batch_size = batch_size if batch_size is not None else 8
         self.LS = LS
 
         # if self.LS is None:
