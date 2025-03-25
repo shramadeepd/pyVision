@@ -5,3 +5,4 @@ data/
 detect/
 datasets/
 *.yaml
+_temp/

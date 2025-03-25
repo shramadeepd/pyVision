@@ -108,7 +108,7 @@ def _take_samples():
                 dst_image_path = os.path.join(combined_images_folder, image_file)
                 if src_image_path != dst_image_path:
                     shutil.copy(src_image_path, dst_image_path)
-                label_file = image_file.replace('.jpg', '.txt')  # Assuming label files have the same name as image files but with .txt extension
+                label_file = os.path.splitext(image_file)[0] + '.txt'  # Assuming label files have the same name as image files but with .txt extension
                 src_label_path = os.path.join(labels_path, label_file)
                 dst_label_path = os.path.join(combined_labels_folder, label_file)
                 if src_label_path != dst_label_path:
