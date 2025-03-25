@@ -1,0 +1,30 @@
+
+Benchmarks complete for ./runs/detect/train4/weights/best.pt on dataset_path.yaml at imgsz=640 (3.03s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+    Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)    FPS
+0  PyTorch       ✅       38.7               0.8569                   38.22  26.16
+
+Benchmarks complete for ./runs/detect/train4/weights/best.pt on dataset_path.yaml at imgsz=640 (3.05s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+    Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)    FPS
+0  PyTorch       ✅       38.7               0.8569                   38.59  25.91
+
+Benchmarks complete for ./runs/detect/train5/weights/best.pt on dataset_path.yaml at imgsz=640 (3.77s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+    Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)    FPS
+0  PyTorch       ✅       48.9               0.8391                   49.91  20.04
+
+Benchmarks complete for ./runs/detect/train7/weights/best.pt on dataset_path.yaml at imgsz=640 (53.44s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+    Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)  FPS
+0  PyTorch       ✅       48.8               0.5337                  140.93  7.1
+
+Benchmarks complete for ./runs/detect/train10/weights/best.pt on dataset_path.yaml at imgsz=640 (51.59s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+    Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)   FPS
+0  PyTorch       ✅       48.8               0.5575                  135.47  7.38
+
+Benchmarks complete for ./runs/detect/train10/weights/best.pt on dataset_path.yaml at imgsz=640 (85.74s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+  Format Status❔  Size (MB)  metrics/mAP50-95(B)  Inference time (ms/im)   FPS
+0   ONNX       ✅       96.8               0.5436                  211.46  4.73

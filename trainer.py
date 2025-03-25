@@ -38,7 +38,7 @@ class YOLOTrainer:
 
         try:
             logger.info(self.data_config)
-            results = self.model.train(data=self.data_config, epochs=self.epochs, batch=self.batch_size)
+            results = self.model.train(data=self.data_config, epochs=self.epochs, batch=self.batch_size , optimizer='SGD',lr0=0.01,seed=42,momentum=0.9)
             logger.info("Training completed successfully.")
             return results
         except FileNotFoundError:
